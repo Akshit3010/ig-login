@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login | Instagram</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="css/ig.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="img/instagram-1594387_1280.png" alt="instagram">
+        </div>
+        <section class="form">
+            <div id="form-box">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" placeholder="Phone number, username, or email" required>
+                        <div class="pass">
+                            <input type="password" placeholder="Password" required>
+                            <span class="show-hide">
+                            <i class="fa fa-eye"></i>
+                          </span>
+                        </div>
+                        <button class="btn" type="disabled">Log in</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="bottom">
+            <p class="p">_______________
+            </p>
+            <h5 class="or">OR</h5>
+            <p class="p">_______________</p>
+        </div>
+        <section class="login">
+            <img src="img/facebook-667456_1920.png" alt="">
+            <a href="http://facebook.com">Log in with Facebook</a>
+        </section>
+        <section class="forgot">
+            <a href="#">Forgot password?</a>
+        </section>
+    </div>
+    <section class="container2">
+        <div class="signup">
+            <p> Don't have an account? </p>
+            <a href="#">Sign up</a>
+        </div>
+    </section>
+    <section class="app">
+        Get the app.
+    </section>
+    <section class="container3">
+        <div class="box">
+           <a href="http://apple.com"> <img src="img/appstore.png" alt=""></a>
+        </div>
+        <div class="box">
+            <a href="http://play.google.com"><img src="img/googleplay.png" alt=""></a>
+        </div>
+    </section>
+    <footer class="foot">
+        <nav class="navbar">
+            <ul>
+                <li class="item"><a href="#">ABOUT US</a> </li>
+                <li class="item"><a href="#">HELP</a> </li>
+                <li class="item"><a href="#">PRESS</a> </li>
+                <li class="item"><a href="#">API</a> </li>
+                <li class="item"><a href="#">JOBS</a> </li>
+                <li class="item"><a href="#">PRIVACY</a> </li>
+                <li class="item"><a href="#">TERMS</a> </li>
+                <li class="item"><a href="#">DIRECTORY</a> </li>
+                <li class="item"><a href="#">PROFILES</a> </li>
+                <li class="item"><a href="#">HASHTAGS</a> </li>
+                <li class="item"><a href="#">LANGUAGE</a> </li>
+            </ul>
+        </nav>
+        <div class="copy">
+            &copy; 2020 INSTAGRAM FROM AKSHIT
+        </div>
+    </footer>
+
+
+    <script>
+        const pass_field = document.querySelector("input[type=password]");
+        const show_btn = document.querySelector("i");
+        show_btn.addEventListener("click", function() {
+            if (pass_field.type === "password") {
+                pass_field.type = "text";
+                show_btn.classList.add("hide");
+            } else {
+                pass_field.type = "password";
+                show_btn.classList.remove("hide");
+            }
+        });
+    </script>
+</body>
+
+</html>

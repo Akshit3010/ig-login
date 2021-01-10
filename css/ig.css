@@ -1,0 +1,217 @@
+body {
+    background-color: rgb(246, 246, 246);
+    display: flex;
+	flex:auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.container {
+    margin-top: 4px;
+    height: 385px;
+    width: 340px;
+    border: 0.1px solid silver;
+    background-color: white;
+}
+
+.logo img {
+    width: 180px;
+    display: block;
+    margin: 20px auto;
+}
+
+#form-box input {
+    width: 75%;
+    padding: 11px 3px;
+    margin: 8px auto;
+    display: block;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+.btn {
+    background-color: #3897f0;
+    cursor: pointer;
+    width: 75%;
+    padding: 0.5rem;
+    margin: 8px auto;
+    display: block;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+	outline:none;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    margin: -12px 3px;
+}
+
+.or {
+    padding: 3px 11px;
+    color: rgb(180, 170, 170);
+    margin-bottom: 3px;
+}
+
+.p {
+    color: silver;
+}
+
+input::placeholder {
+    color: #a6a6a6
+}
+
+input[type=text],input[type=password]{
+	outline:none;
+}
+
+.show-hide {
+    position: absolute;
+    right: 41%;
+    top: 32%;
+    transform: translateY(-50%);
+}
+
+.show-hide i {
+    font-size: 15px;
+    color: grey;
+    cursor: pointer;
+    display: none;
+}
+
+.show-hide i.hide::before {
+    content: '\f070';
+}
+
+input:valid~.show-hide i {
+    display: block;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    margin: 24px 3px;
+    padding-right: 24px;
+}
+
+.login img {
+    height: 17px;
+    width: 17px;
+    margin: 1px 9px;
+}
+
+.login a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #2a6ead;
+}
+
+.forgot {
+    display: flex;
+    justify-content: center;
+    margin-top: -11px
+}
+
+.forgot a {
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.container2 {
+    margin-top: 11px;
+    height: 70px;
+    width: 340px;
+    border: 0.1px solid silver;
+    background-color: white;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 3px;
+}
+
+.signup p {
+    font-size: 14px;
+}
+
+.signup a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: #85a1bb;
+}
+
+.app {
+    margin-top: 23px;
+    font-size: 13px;
+    margin-bottom: 9px;
+}
+
+.box {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 0px -6px;
+}
+
+.box img {
+    height: 60px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.container3 {
+    width: 500px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.foot {
+    display: flex;
+    margin-top: 43px;
+    margin-bottom: 23px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 2px 8px;
+    margin: 1px 0px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.copy {
+    padding: 15px 67px;
+    margin: 6px 62px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(161, 159, 159);
+}
+
+@media screen and (max-width: 1200px){
+	.navbar{
+		display:none;
+	}
+}
+	
