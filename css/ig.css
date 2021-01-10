@@ -74,9 +74,9 @@ input[type=text],input[type=password]{
 }
 
 .show-hide {
-    position: absolute;
-    right: 41%;
-    top: 32%;
+       position: relative;
+    left: 80%;
+    top: -31px;
     transform: translateY(-50%);
 }
 
@@ -209,7 +209,7 @@ input:valid~.show-hide i {
     color: rgb(161, 159, 159);
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 984px){
 	.navbar{
 		display:none;
 	}
